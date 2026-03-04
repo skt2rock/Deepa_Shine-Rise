@@ -1015,13 +1015,6 @@
     <!-- EmailJS Integration -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function () {
-            // INSTRUCTION: Replace with your actual EmailJS Public Key
-            emailjs.init({
-                publicKey: "MTzWrFV_PGBPyoEf-",
-            });
-        })();
-
         document.getElementById('contact-form').addEventListener('submit', function (event) {
             event.preventDefault();
 
@@ -1039,11 +1032,11 @@
 
             lucide.createIcons(); // Ensure spinner icon is visible
 
-            // INSTRUCTION: Replace these strings with your actual Service ID and Template ID
             const serviceID = 'service_x43a7i2';
             const templateID = 'template_lnm91sc';
+            const publicKey = 'MTzWrFV_PGBPyoEf-';
 
-            emailjs.sendForm(serviceID, templateID, this)
+            emailjs.sendForm(serviceID, templateID, this, publicKey)
                 .then(() => {
                     formMsg.textContent = 'Thank you! We have received your request and will contact you shortly.';
                     formMsg.className = 'text-sm text-center mt-4 font-medium text-green-600 block';
