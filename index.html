@@ -969,7 +969,7 @@
         async function generateContent(prompt) {
             const loading = document.getElementById('ai-loading');
             const resultDiv = document.getElementById('ai-result');
-            const apiKey = ""; // Environment will provide this
+            const apiKey = "AIzaSyBphIb6W4rUpwSU4Rd_8EYjmZh-O7pMxRc"; // Environment will provide this
 
             loading.classList.remove('hidden');
 
@@ -1018,7 +1018,7 @@
         (function () {
             // INSTRUCTION: Replace with your actual EmailJS Public Key
             emailjs.init({
-                publicKey: "YOUR_PUBLIC_KEY",
+                publicKey: "MTzWrFV_PGBPyoEf-",
             });
         })();
 
@@ -1040,8 +1040,8 @@
             lucide.createIcons(); // Ensure spinner icon is visible
 
             // INSTRUCTION: Replace these strings with your actual Service ID and Template ID
-            const serviceID = 'YOUR_SERVICE_ID';
-            const templateID = 'YOUR_TEMPLATE_ID';
+            const serviceID = 'service_x43a7i2';
+            const templateID = 'template_lnm91sc';
 
             emailjs.sendForm(serviceID, templateID, this)
                 .then(() => {
