@@ -12,12 +12,12 @@ export default {
             },
             colors: {
                 brand: {
-                    cream: '#F9F8F6', // Soft creamy paper background
-                    ink: '#1A1C20', // Tailored charcoal
-                    gold: '#C29A62', // Muted elegant gold
-                    terracotta: '#D47559', // Organic accent
-                    sage: '#A6B2A1', // Earthy green
-                    navy: '#233140', // Refined navy
+                    cream: '#FAFAFA', // Clean Vercel-style off-white background
+                    ink: '#111111', // High contrast Vercel black
+                    gold: '#FE7903', // Logo bright orange
+                    terracotta: '#DF3301', // Logo deep orange/red
+                    sage: '#0687DD', // Logo bright blue
+                    navy: '#04558F', // Deep high-contrast blue
                 }
             },
             boxShadow: {

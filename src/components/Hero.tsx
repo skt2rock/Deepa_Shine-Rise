@@ -45,27 +45,35 @@ const Hero = () => {
                     <div className="w-full lg:w-[45%] relative flex justify-center lg:justify-end opacity-0 animate-fade-in" style={{ animationDelay: "0.3s" }}>
                         <div className="relative w-full max-w-[480px] h-[600px] bg-brand-cream border border-brand-ink/5 p-6 shadow-editorial">
                             {/* Inner framing */}
-                            <div className="w-full h-full border border-brand-ink/10 relative p-8 flex flex-col justify-between overflow-hidden bg-white">
-                                <div className="absolute top-0 right-0 w-64 h-64 bg-brand-terracotta/5 rounded-full blur-[80px] pointer-events-none"></div>
+                            <div className="w-full h-full border border-brand-ink/10 relative p-8 flex flex-col justify-between bg-white overflow-hidden group">
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-brand-terracotta/5 rounded-full blur-[80px] pointer-events-none z-10"></div>
+
+                                <div className="absolute left-8 right-8 top-20 bottom-48 border border-brand-ink/5 overflow-hidden z-0 bg-brand-cream">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop"
+                                        alt="Modern architecture"
+                                        className="w-full h-full object-cover grayscale opacity-90 mix-blend-multiply group-hover:scale-105 transition-transform duration-1000"
+                                    />
+                                </div>
 
                                 <div className="flex justify-between items-start z-10">
-                                    <div className="text-[10px] uppercase font-bold tracking-widest text-brand-ink/40">F. 1989</div>
+                                    <div className="text-[10px] uppercase font-bold tracking-widest text-brand-ink/40 bg-white/80 px-2 -ml-2 backdrop-blur-sm">F. 1989</div>
                                     <div className="w-8 h-px bg-brand-ink/20 mt-1.5"></div>
                                 </div>
 
-                                <div className="z-10 mt-auto">
+                                <div className="z-10 mt-auto bg-white/95 backdrop-blur-md pt-6 -mx-4 px-4 border-t border-brand-cream">
                                     <h3 className="font-display text-4xl leading-none text-brand-navy mb-4">
                                         Precision <br /> & <span className="italic font-light text-brand-gold">Integrity</span>
                                     </h3>
-                                    <div className="h-px w-full bg-brand-ink/10 my-6"></div>
+                                    <div className="h-px w-full bg-brand-ink/10 my-4"></div>
                                     <p className="text-sm font-light leading-relaxed text-brand-ink/60">
                                         End-to-end management of complex labour regulations protecting your enterprise scale.
                                     </p>
                                 </div>
 
                                 {/* Geometric editorial detail */}
-                                <div className="absolute -right-10 -bottom-10 w-40 h-40 border-[1px] border-brand-gold/30 rounded-full"></div>
-                                <div className="absolute -right-4 -bottom-4 w-40 h-40 border-[1px] border-brand-terracotta/20 rounded-full"></div>
+                                <div className="absolute -right-10 -bottom-10 w-40 h-40 border-[1px] border-brand-gold/30 rounded-full z-20 pointer-events-none"></div>
+                                <div className="absolute -right-4 -bottom-4 w-40 h-40 border-[1px] border-brand-terracotta/20 rounded-full z-20 pointer-events-none"></div>
                             </div>
 
                             {/* Staggered overlapping element */}

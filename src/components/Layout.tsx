@@ -20,20 +20,20 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <div className="min-h-screen flex flex-col font-sans bg-brand-cream texture-bg overflow-x-hidden text-brand-ink pt-28">
             <nav
                 className={`fixed top-0 w-full z-50 transition-all duration-700 ease-in-out ${isScrolled
-                        ? 'py-4 bg-brand-cream/80 backdrop-blur-xl border-b border-brand-ink/5'
-                        : 'py-8 bg-transparent'
+                    ? 'py-4 bg-brand-cream/80 backdrop-blur-xl border-b border-brand-ink/5'
+                    : 'py-8 bg-transparent'
                     }`}
             >
                 <div className="container mx-auto px-8 max-w-7xl flex items-center justify-between">
-                    <Link to="/" className="flex items-center gap-5 group">
-                        <div className="relative h-12 w-12 overflow-hidden flex items-center justify-center transition-transform duration-700 group-hover:-rotate-3">
-                            <img src="/Logo.PNG" alt="Shine And Rise" className="h-full w-auto object-contain mix-blend-multiply" />
+                    <Link to="/" className="flex items-center gap-4 group">
+                        <div className="relative h-20 w-20 overflow-hidden flex items-center justify-center transition-transform duration-700 group-hover:-rotate-3">
+                            <img src="/Logo.PNG" alt="Shine And Rise" className="h-full w-full object-contain mix-blend-multiply" />
                         </div>
-                        <div className="flex flex-col">
-                            <span className="font-display font-medium text-2xl leading-none text-brand-ink tracking-wide">
-                                Shine & Rise
+                        <div className="flex flex-col justify-center">
+                            <span className="font-display font-medium text-[2rem] leading-none tracking-wide bg-gradient-to-b from-[#FE7903] to-[#DF3301] text-transparent bg-clip-text pb-1">
+                                Shine and Rise
                             </span>
-                            <span className="text-[9px] font-semibold tracking-[0.3em] text-brand-sage mt-1.5 uppercase">
+                            <span className="text-[11px] font-semibold tracking-[0.3em] text-[#0687DD] mt-1 uppercase">
                                 Facilities
                             </span>
                         </div>
@@ -99,7 +99,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     <div className="md:col-span-4 flex flex-col justify-between">
                         <div>
                             <div className="flex items-center gap-5 mb-8">
-                                <span className="font-display font-medium text-3xl tracking-wide">Shine & Rise.</span>
+                                <span className="font-display font-medium text-3xl tracking-wide">Shine and Rise.</span>
                             </div>
                             <p className="text-sm leading-relaxed text-brand-cream/60 font-light max-w-xs">
                                 Fostering organizational trust through impeccable statutory compliance, precise payroll operations, and rigorous HR advisory.
