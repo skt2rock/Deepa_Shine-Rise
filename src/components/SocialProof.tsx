@@ -1,4 +1,3 @@
-import React from 'react';
 import { Building2, Briefcase, Factory, GraduationCap, Plane, Stethoscope } from 'lucide-react';
 
 const industries = [
